@@ -1,0 +1,3 @@
+gradio
+openai
+google-api-python-client

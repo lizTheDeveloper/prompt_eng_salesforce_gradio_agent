@@ -1,0 +1,112 @@
+---
+description: A reference example of the OpenAI Agents SDK
+globs: 
+alwaysApply: false
+---
+This is the OpenAI Agents SDK Quickstart- use this as an example.
+
+```python
+from agents import Agent, InputGuardrail, GuardrailFunctionOutput, Runner
+from pydantic import BaseModel
+import asyncio
+
+class HomeworkOutput(BaseModel):
+    is_homework: bool
+    reasoning: str
+
+guardrail_agent = Agent(
+    name="Guardrail check",
+    instructions="Check if the user is asking about homework.",
+    output_type=HomeworkOutput,
+)
+
+math_tutor_agent = Agent(
+    name="Math Tutor",
+    handoff_description="Specialist agent for math questions",
+    instructions="You provide help with math problems. Explain your reasoning at each step and include examples",
+)
+
+history_tutor_agent = Agent(
+    name="History Tutor",
+    handoff_description="Specialist agent for historical questions",
+    instructions="You provide assistance with historical queries. Explain important events and context clearly.",
+)
+
+async def homework_guardrail(ctx, agent, input_data):
+    result = await Runner.run(guardrail_agent, input_data, context=ctx.context)
+    final_output = result.final_output_as(HomeworkOutput)
+    return GuardrailFunctionOutput(
+        output_info=final_output,
+        tripwire_triggered=not final_output.is_homework,
+    )
+
+triage_agent = Agent(
+    name="Triage Agent",
+    instructions="You determine which agent to use based on the user's homework question",
+    handoffs=[history_tutor_agent, math_tutor_agent],
+    input_guardrails=[
+        InputGuardrail(guardrail_function=homework_guardrail),
+    ],
+)
+
+async def main():
+    result = await Runner.run(triage_agent, "who was the first president of the united states?")
+    print(result.final_output)
+
+    result = await Runner.run(triage_agent, "what is life")
+    print(result.final_output)
+
+if __name__ == "__main__":
+    asyncio.run(main())
+
+```
+
+Here's how to use alternate model providers with litellm.
+First, use the litellm python sdk by installing it: `pip install litellm`
+Then:
+```python
+from __future__ import annotations
+
+import asyncio
+
+from agents import Agent, Runner, function_tool, set_tracing_disabled
+from agents.extensions.models.litellm_model import LitellmModel
+
+@function_tool
+def get_weather(city: str):
+    print(f"[debug] getting weather for {city}")
+    return f"The weather in {city} is sunny."
+
+
+async def main(model: str, api_key: str):
+    agent = Agent(
+        name="Assistant",
+        instructions="You only respond in haikus.",
+        model=LitellmModel(model=model, api_key=api_key),
+        tools=[get_weather],
+    )
+
+    result = await Runner.run(agent, "What's the weather in Tokyo?")
+    print(result.final_output)
+
+if __name__ == "__main__":
+    # First try to get model/api key from args
+    import argparse
+
+    parser = argparse.ArgumentParser()
+    parser.add_argument("--model", type=str, required=False)
+    parser.add_argument("--api-key", type=str, required=False)
+    args = parser.parse_args()
+
+    model = args.model
+    if not model:
+        model = input("Enter a model name for Litellm: ")
+
+    api_key = args.api_key
+    if not api_key:
+        api_key = input("Enter an API key for Litellm: ")
+
+    asyncio.run(main(model, api_key))
+
+```
+
