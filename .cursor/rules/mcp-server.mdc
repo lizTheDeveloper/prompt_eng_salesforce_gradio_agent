@@ -1,0 +1,355 @@
+---
+description: Building a Model Context Protocol (MCP) Server in Node.js
+globs: 
+alwaysApply: false
+---
+The Model Context Protocol (MCP) is an open standard created by Anthropic that enables seamless integration between Large Language Models (LLMs) and external tools, data sources, and systems. Think of MCP as a "USB-C port" for AI integrations - it standardizes how AI applications connect with external resources, reducing the need for custom integrations.
+
+This guide will walk you through creating a simple MCP server in Node.js using the official TypeScript SDK.
+
+## Prerequisites
+
+Before starting, ensure you have:
+
+- **Node.js** (v20 or higher)
+- **TypeScript** (v5.0 or later)
+- Basic knowledge of JavaScript/TypeScript
+- 10-15 minutes of time
+
+## Getting Started
+
+### Step 1: Create a New Project
+
+First, let's create a new project directory and initialize the necessary files:
+
+```bash
+# Create project directory
+mkdir my-mcp-server
+cd my-mcp-server
+
+# Initialize npm project
+npm init -y
+
+# Install dependencies
+npm install @modelcontextprotocol/sdk zod
+npm install -D typescript @types/node
+
+# Create TypeScript config
+npx tsc --init
+
+# Create source directory
+mkdir src
+```
+
+### Step 2: Configure TypeScript
+
+Update your `tsconfig.json` file with the following settings:
+
+```json
+{
+  "compilerOptions": {
+    "target": "ES2022",
+    "module": "Node16",
+    "moduleResolution": "Node16",
+    "outDir": "./build",
+    "rootDir": "./src",
+    "strict": true,
+    "esModuleInterop": true,
+    "skipLibCheck": true,
+    "forceConsistentCasingInFileNames": true
+  },
+  "include": ["src/**/*"],
+  "exclude": ["node_modules"]
+}
+```
+
+And modify your `package.json` to include:
+
+```json
+{
+  "type": "module",
+  "scripts": {
+    "build": "tsc",
+    "start": "node build/index.js"
+  }
+}
+```
+
+### Step 3: Create Your MCP Server
+
+Create a new file named `src/index.ts` with the following code:
+
+```typescript
+import { McpServer, ResourceTemplate } from "@modelcontextprotocol/sdk/server/mcp.js";
+import { StdioServerTransport } from "@modelcontextprotocol/sdk/server/stdio.js";
+import { z } from "zod";
+
+// Create a new MCP server instance
+const server = new McpServer({
+  name: "my-first-mcp-server",
+  version: "1.0.0"
+});
+
+// Add a simple calculator tool
+server.tool(
+  "calculator",
+  {
+    operation: z.enum(["add", "subtract", "multiply", "divide"]),
+    a: z.number(),
+    b: z.number()
+  },
+  async ({ operation, a, b }) => {
+    let result;
+    
+    switch (operation) {
+      case "add":
+        result = a + b;
+        break;
+      case "subtract":
+        result = a - b;
+        break;
+      case "multiply":
+        result = a * b;
+        break;
+      case "divide":
+        if (b === 0) {
+          throw new Error("Cannot divide by zero");
+        }
+        result = a / b;
+        break;
+    }
+    
+    return {
+      content: [
+        {
+          type: "text",
+          text: `The result of ${a} ${operation} ${b} is ${result}`
+        }
+      ]
+    };
+  }
+);
+
+// Add a simple greeting resource
+server.resource(
+  "greeting",
+  new ResourceTemplate("greeting://{name}", { list: undefined }),
+  async (uri, { name }) => ({
+    contents: [
+      {
+        uri: uri.href,
+        text: `Hello, ${name}! Welcome to MCP.`
+      }
+    ]
+  })
+);
+
+// Start receiving messages on stdin and sending messages on stdout
+const transport = new StdioServerTransport();
+await server.connect(transport);
+
+console.log("MCP Server is running...");
+```
+
+### Step 4: Build and Run Your Server
+
+Now build and run your MCP server:
+
+```bash
+# Build the server
+npm run build
+
+# Run the server
+npm start
+```
+
+The server is now running and waiting for MCP client connections.
+
+## MCP Server Components Explained
+
+### 1. Tools
+
+Tools are functions that your MCP server provides to LLMs for performing actions. They're similar to POST endpoints in a REST API.
+
+Example:
+
+```typescript
+server.tool(
+  "tool_name",               // Name of the tool
+  {                          // Parameter schema using Zod
+    param1: z.string(),
+    param2: z.number()
+  },
+  async ({ param1, param2 }) => {
+    // Function implementation
+    return {
+      content: [
+        {
+          type: "text",
+          text: "Result of the tool execution"
+        }
+      ]
+    };
+  }
+);
+```
+
+### 2. Resources
+
+Resources provide data to LLMs without performing significant computation. They're similar to GET endpoints in a REST API.
+
+Example:
+```typescript
+server.resource(
+  "resource_name",                     // Name of the resource
+  new ResourceTemplate("custom://{id}", { list: undefined }),  // URI template
+  async (uri, { id }) => ({
+    contents: [
+      {
+        uri: uri.href,
+        text: `Data for ID: ${id}`
+      }
+    ]
+  })
+);
+```
+
+### 3. Prompts
+
+Prompts are pre-defined templates for LLM interactions that can guide how the LLM uses your server's tools and resources.
+
+Example:
+
+```typescript
+server.prompt(
+  "prompt_name",                 // Name of the prompt
+  async () => ({
+    content: [
+      {
+        type: "text",
+        text: "Instructions for the language model on how to use this server's tools and resources."
+      }
+    ]
+  })
+);
+```
+
+## Testing Your MCP Server
+
+### Using the MCP Inspector
+
+The MCP Inspector is a tool that helps you test your MCP servers by simulating client requests.
+
+Install it globally:
+
+```bash
+npm install -g @modelcontextprotocol/inspector
+```
+
+Then run it:
+
+```bash
+mcp-inspector
+```
+
+In the Inspector interface:
+1. Choose "STDIO" as the transport
+2. Enter the path to your server executable
+3. Click "Connect"
+4. Test your tools and resources from the UI
+
+### Integration with Claude Desktop
+
+To use your MCP server with Claude Desktop:
+
+1. In Claude Desktop, click the plug icon (🔌) in the sidebar
+2. Select "Add Server"
+3. Choose "stdio" for the transport type
+4. Provide the path to your Node.js executable and the path to your MCP server script
+5. Click "Save"
+
+Now you can ask Claude to use your server's tools!
+
+## Advanced Features
+
+### Adding Data Fetching
+
+Here's an example of a weather tool that fetches real data:
+
+```typescript
+import fetch from 'node-fetch';
+
+server.tool(
+  "get_weather",
+  {
+    city: z.string()
+  },
+  async ({ city }) => {
+    try {
+      const response = await fetch(`https://api.open-meteo.com/v1/forecast?latitude=52.52&longitude=13.41&current_weather=true`);
+      const data = await response.json();
+      
+      return {
+        content: [
+          {
+            type: "text",
+            text: `Current temperature in ${city}: ${data.current_weather.temperature}°C`
+          }
+        ]
+      };
+    } catch (error) {
+      throw new Error(`Failed to fetch weather data: ${error.message}`);
+    }
+  }
+);
+```
+
+### Setting Up Authentication
+
+If your MCP server needs to access authenticated services, you can use OAuth 2.0:
+
+```typescript
+import express from 'express';
+import { ProxyOAuthServerProvider, mcpAuthRouter } from '@modelcontextprotocol/sdk';
+
+const app = express();
+const proxyProvider = new ProxyOAuthServerProvider({
+  endpoints: {
+    authorizationUrl: "https://auth.external.com/oauth2/v1/authorize",
+    tokenUrl: "https://auth.external.com/oauth2/v1/token",
+    revocationUrl: "https://auth.external.com/oauth2/v1/revoke",
+  },
+  verifyAccessToken: async (token) => {
+    return {
+      token,
+      clientId: "123",
+      scopes: ["openid", "email", "profile"],
+    }
+  },
+  getClient: async (client_id) => {
+    return {
+      client_id,
+      redirect_uris: ["http://localhost:3000/callback"],
+    }
+  }
+});
+
+app.use(mcpAuthRouter({
+  provider: proxyProvider,
+  issuerUrl: new URL("http://auth.external.com"),
+  baseUrl: new URL("http://mcp.example.com"),
+  serviceDocumentationUrl: new URL("https://docs.example.com/"),
+}));
+```
+
+## Conclusion
+
+You've now built a basic MCP server using Node.js! This server can be connected to any MCP-compatible client, including Claude Desktop and other AI applications that support the Model Context Protocol.
+
+By extending this basic structure, you can create more complex integrations that allow AI models to interact with your data sources, APIs, and business logic in a standardized way.
+
+## Resources
+
+- [MCP TypeScript SDK](mdc:https:/github.com/modelcontextprotocol/typescript-sdk)
+- [Model Context Protocol Specification](mdc:https:/modelcontextprotocol.github.io/specification)
+- [MCP Server Examples](mdc:https:/github.com/modelcontextprotocol/servers)
