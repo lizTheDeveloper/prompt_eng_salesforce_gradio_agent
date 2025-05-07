@@ -1,0 +1,196 @@
+https://openai.github.io/openai-agents-python/mcp/ | Model context protocol (MCP) - OpenAI Agents SDK
+https://openai.github.io/openai-agents-python/ref/function_schema/#agents.function_schema | Function schema - OpenAI Agents SDK
+https://platform.openai.com/traces/trace?trace_id=trace_18356a5ff73644cbb713a73e2a3f3752 | Traces - trace_18356a5ff73644cbb713a73e2a3f3752 - OpenAI API
+https://github.com/wilsonchenghy/ShaderToy-MCP | wilsonchenghy/ShaderToy-MCP
+https://naman1011.medium.com/model-context-protocol-mcp-servers-with-the-openai-agents-3c70dde971bb | Model Context Protocol (MCP) Servers with the OpenAI Agents | by Naman Tripathi | Apr, 2025 | Medium
+https://tavily.com/ | Tavily
+https://app.tavily.com/home | Tavily AI
+https://mail.google.com/mail/u/0/#search/shadertoy/FMfcgzQbfBscWPqssxFqGNlfNdkrQxNw | Welcome to Shadertoy: Please verify your account - lizthedeveloper@gmail.com - Gmail
+https://github.com/PatrickJS/awesome-cursorrules?tab=readme-ov-file | PatrickJS/awesome-cursorrules: 📄 A curated list of awesome .cursorrules files
+https://start.me/p/RMPGL5/multiverse-ai-toolkit | Multiverse AI Toolkit - Start.me
+https://platform.openai.com/traces/trace?trace_id=trace_5309b85604e04f6a818a852b1162ba52 | Traces - trace_5309b85604e04f6a818a852b1162ba52 - OpenAI API
+https://drive.google.com/drive/u/0/folders/1tTiiDXtkZzUa-dZ9q-io27T9jfh_eNFS | Intro to Generative AI Models - Google Drive
+https://docs.google.com/presentation/d/1e9VTozxUrS7ZEACFAFynad8oP5KjmAIMPBJ1KQuWvYQ/edit?slide=id.g34204ad825b_0_119#slide=id.g34204ad825b_0_119 | NLP for RAG - Day 1 - Google Slides
+https://colab.research.google.com/drive/1pk5lnQ8vaFCjEVdZ2bLp8Qpfn3sC6Nbk#scrollTo=YZKQqeoty0TE | Sentence-Transformers - RAG Pipeline.ipynb - Colab
+https://github.com/tsinghua-fib-lab/LLM-Agent-Based-Modeling-and-Simulation | tsinghua-fib-lab/LLM-Agent-Based-Modeling-and-Simulation
+https://arxiv.org/pdf/2304.05351 | 2304.05351
+https://platform.openai.com/docs/api-reference/moderations | API Reference - OpenAI API
+https://openai.com/index/upgrading-the-moderation-api-with-our-new-multimodal-moderation-model/ | Upgrading the Moderation API with our new multimodal moderation model | OpenAI
+https://poloclub.github.io/transformer-explainer/ | Transformer Explainer: LLM Transformer Model Visually Explained
+https://arxiv.org/pdf/2411.00986 | 2411.00986
+https://arxiv.org/html/2501.00663v1 | Titans: Learning to Memorize at Test Time
+https://arxiv.org/pdf/2501.00663v1 | 2501.00663v1
+https://www.sciencedirect.com/science/article/pii/S2713374523000316 | How does generative artificial intelligence impact student creativity? - ScienceDirect
+https://www.science.org/doi/10.1126/sciadv.adn5290 | Generative AI enhances individual creativity but reduces the collective diversity of novel content | Science Advances
+https://spinningup.openai.com/en/latest/user/introduction.html#how-this-serves-our-mission | Introduction — Spinning Up documentation
+https://chatgpt.com/gpts/editor/g-68165bc7e34081918a9524a4dadcb3cb | ChatGPT
+https://chatgpt.com/g/g-68165bc7e34081918a9524a4dadcb3cb-seraphina/c/68166194-3efc-800c-9881-4a4f2c49a34c | ChatGPT - Seraphina
+https://suno.com/playlist/b6cf1a13-63a9-4176-95fc-0b1729ec6df1 | Holistic Heuristic by @luck_surface_area | Suno
+https://www.youtube.com/watch?v=KxaPYhfJV4U | (1055) 4 AIs Survive 10 Days in Minecraft - YouTube
+https://github.com/loopwork-ai/emcee | loopwork-ai/emcee: An MCP generator for OpenAPIs 🫳🎤💥
+https://drive.google.com/drive/u/0/folders/1ilzqiEh9R_mXgTkQuJYDM0i0hTDGlYRB | Templates - Google Drive
+https://docs.google.com/presentation/d/1eqE4MNNcr4xHuNfB70Nnv3G624shFwspmu3PjLKJau0/edit?slide=id.g22288977a64_1_775#slide=id.g22288977a64_1_775 | ILT Instructor Slide Template - Google Slides
+https://groq.com/ | Groq is Fast AI Inference
+https://openai.github.io/openai-agents-python/ | OpenAI Agents SDK
+https://cerebralvalley.ai/events | Cerebral Valley
+https://gist.github.com/lizTheDeveloper/a5f003ce95752cf9cc17c2554c10a339 | gemini_paper_extractor.md
+https://gist.github.com/lizTheDeveloper/529822ee60c0afbbd872b042b68352db | RAG_agent.py
+https://github.com/facebookresearch/faiss/wiki/Faiss-indexes | Faiss indexes · facebookresearch/faiss Wiki
+https://github.com/facebookresearch/faiss/wiki/Index-IO,-cloning-and-hyper-parameter-tuning#io-and-deep-copying-indexes | Index IO, cloning and hyper parameter tuning · facebookresearch/faiss Wiki
+https://cookbook.openai.com/ | OpenAI Cookbook
+https://docs.anthropic.com/en/docs/resources/cookbook | Anthropic Cookbook - Anthropic
+https://github.com/anthropics/anthropic-cookbook | anthropics/anthropic-cookbook: A collection of notebooks/recipes showcasing some fun and effective ways of using Claude.
+https://github.com/lizTheDeveloper/prompt_eng_salesforce_gradio_agent | lizTheDeveloper/prompt_eng_salesforce_gradio_agent
+https://github.com/openai/openai-agents-python/releases | Releases · openai/openai-agents-python
+https://docs.litellm.ai/docs/providers/vertex | VertexAI [Anthropic, Gemini, Model Garden] | liteLLM
+https://cloud.google.com/vertex-ai?hl=en | Vertex AI Platform | Google Cloud
+https://docs.litellm.ai/docs/providers | Providers | liteLLM
+https://github.com/jessevig/bertviz/blob/master/bertviz/transformers_neuron_view/tokenization_bert.py | bertviz/bertviz/transformers_neuron_view/tokenization_bert.py at master · jessevig/bertviz
+https://colab.research.google.com/drive/1hXIQ77A4TYS4y3UthWF-Ci7V7vVUoxmQ?usp=sharing#scrollTo=TG-dQt3NOlub | bertviz_tutorial.ipynb - Colab
+https://huggingface.co/spaces/mteb/leaderboard | MTEB Leaderboard - a Hugging Face Space by mteb
+https://csrc.nist.gov/projects/cprt/catalog#/cprt/home | Cybersecurity and Privacy Reference Tool | CSRC
+https://huggingface.co/intfloat/multilingual-e5-large-instruct | intfloat/multilingual-e5-large-instruct · Hugging Face
+https://colab.research.google.com/drive/1pk5lnQ8vaFCjEVdZ2bLp8Qpfn3sC6Nbk#scrollTo=OnwKpq_TbyeS | Sentence-Transformers - RAG Pipeline.ipynb - Colab
+https://huggingface.co/infly/inf-retriever-v1 | infly/inf-retriever-v1 · Hugging Face
+https://aclanthology.org/2022.flp-1.5.pdf | 2022.flp-1.5.pdf
+https://www.google.com/search?q=chenza+at+court+the+court+of+silence&sca_esv=008f9e8726f85704&sxsrf=AHTn8zoEihnqXbCoZvSX77Mr0MGpNln54A%3A1746499427967&ei=Y3cZaPDqOv--0PEPwtSvsAU&oq=Chenza+at+court%2C+the+court+of&gs_lp=Egxnd3Mtd2l6LXNlcnAiHUNoZW56YSBhdCBjb3VydCwgdGhlIGNvdXJ0IG9mKgIIADIGEAAYFhgeMgsQABiABBiGAxiKBTILEAAYgAQYhgMYigUyCxAAGIAEGIYDGIoFMgsQABiABBiGAxiKBTIFEAAY7wUyBRAAGO8FMggQABiABBiiBDIFEAAY7wUyCBAAGIAEGKIESLhCUIYTWMo8cAV4AZABAJgBggGgAYsVqgEEMjMuNrgBA8gBAPgBAZgCIqAClhbCAgoQABiwAxjWBBhHwgIKECMYgAQYJxiKBcICBBAjGCfCAgsQLhiABBiRAhiKBcICChAAGIAEGEMYigXCAgoQLhiABBhDGIoFwgIIEAAYgAQYsQPCAg4QLhiABBixAxjRAxjHAcICDhAAGIAEGLEDGIMBGIoFwgINEAAYgAQYsQMYFBiHAsICCxAAGIAEGJECGIoFwgIREC4YgAQYsQMY0QMYgwEYxwHCAhQQLhiABBixAxjRAxiDARjHARiKBcICDRAAGIAEGLEDGEMYigXCAhAQLhiABBixAxhDGIMBGIoFwgINEC4YgAQYsQMYQxiKBcICCBAuGIAEGLEDwgILEC4YgAQYsQMYgwHCAgUQABiABMICFBAuGIAEGLEDGMcBGJgFGJoFGK8BwgIFEC4YgATCAgcQLhiABBgKwgIUEC4YgAQYlwUY3AQY3gQY4ATYAQHCAgcQABiABBgKmAMA4gMFEgExIECIBgGQBgi6BgYIARABGBSSBwUyMy4xMaAH3P0BsgcFMTguMTG4B4MWwgcHMC4xNC4yMMgHdw&sclient=gws-wiz-serp | chenza at court the court of silence - Google Search
+https://www.frontiersin.org/journals/physics/articles/10.3389/fphy.2025.1561873/full | Frontiers | Astrophysical constraints on the simulation hypothesis for this Universe: why it is (nearly) impossible that we live in a simulation
+https://console.cloud.google.com/apis/library?project=gmail-demo-459021&supportedpurview=project | API Library – APIs & Services – gmail-demo – Google Cloud console
+https://console.cloud.google.com/auth/audience?project=gmail-demo-459021 | Audience – Google Auth Platform – gmail-demo – Google Cloud console
+https://console.cloud.google.com/auth/clients?project=gmail-demo-459021 | Clients – Google Auth Platform – gmail-demo – Google Cloud console
+https://www.gradio.app/docs/python-client/introduction | Gradio Python Client - Introduction Docs
+https://www.amazon.com/Singularity-Nearer-Ray-Kurzweil-ebook/dp/B08Y6FYJVY/ref=tmm_kin_swatch_0 | Amazon.com: The Singularity Is Nearer: When We Merge with AI eBook : Kurzweil, Ray: Kindle Store
+https://platform.openai.com/api-keys | API keys - OpenAI API
+https://docs.anthropic.com/en/docs/build-with-claude/prompt-engineering/prompt-templates-and-variables | Use prompt templates and variables - Anthropic
+https://calendar.google.com/calendar/u/0/r/week | Google Calendar - Week of May 4, 2025
+https://docs.google.com/presentation/d/1MgLeEkSyjYUss5JxOzdX1DANJMQj5lbI2MnK_wW-jY4/edit?slide=id.g3508d7141bc_0_481#slide=id.g3508d7141bc_0_481 | Prompt Eng Day 3 & 4 - Google Slides
+https://ai.google.dev/gemini-api/docs/function-calling?example=meeting#python_1 | Function Calling with the Gemini API  |  Google AI for Developers
+https://openai.com/api/ | API Platform | OpenAI
+https://platform.openai.com/docs/guides/structured-outputs?api-mode=responses | Structured Outputs - OpenAI API
+https://github.com/modelcontextprotocol | Model Context Protocol
+https://github.com/loopwork-ai/emcee | loopwork-ai/emcee: An MCP generator for OpenAPIs 🫳🎤💥
+https://gist.github.com/ | Create a new Gist
+https://drive.google.com/drive/u/0/folders/1b3rHrG8w8BOR-e1IzHvqw-5gmjMaY7Jz | Prompt Engineering for Software Developers - Google Drive
+https://gist.github.com/lizTheDeveloper/57d348527408ea67fe07962921e85801 | value_chain_expert.md
+https://gist.github.com/lizTheDeveloper/13e95033b79b6b4afa6aa5f9fa13816d | convo_roleplay.md
+https://claude.ai/share/5215f35b-ff2e-421a-8940-76c686eb2c24 | Claude
+https://gemini.google.com/app/b332ad30d26c76e7 | Gemini
+https://docs.google.com/presentation/d/1Adj-YGegUHcEp3yOHQKIZELprUhqXFdmM4fj5OI867k/edit?slide=id.g3508d7141bc_0_143#slide=id.g3508d7141bc_0_143 | Prompt Eng Day 1 & 2 - Google Slides
+https://colab.research.google.com/drive/1M02tstwqtfhk9XkRJeqBIiyZO9OI-D4Q#scrollTo=F_zcmQY7xFtY | Tensorflow - RAG Pipeline.ipynb - Colab
+https://github.com/iiab | Internet-in-a-Box
+https://docs.google.com/presentation/d/1MgLeEkSyjYUss5JxOzdX1DANJMQj5lbI2MnK_wW-jY4/edit?slide=id.g3553a914750_0_13#slide=id.g3553a914750_0_13 | Prompt Eng Day 3 & 4 - Google Slides
+https://ai.google.dev/gemini-api/docs/document-processing?lang=python | Document understanding  |  Gemini API  |  Google AI for Developers
+https://github.com/modelcontextprotocol | Model Context Protocol
+https://platform.openai.com/usage | OpenAI Platform
+https://ai.google.dev/gemini-api/docs/function-calling?example=meeting | Function Calling with the Gemini API  |  Google AI for Developers
+https://github.com/openai/openai-agents-python/tree/main | openai/openai-agents-python: A lightweight, powerful framework for multi-agent workflows
+https://docs.litellm.ai/docs/providers/anthropic | Anthropic | liteLLM
+https://github.com/openai/swarm/tree/main | openai/swarm: Educational framework exploring ergonomic, lightweight multi-agent orchestration. Managed by OpenAI Solution team.
+https://docs.pydantic.dev/latest/ | Welcome to Pydantic - Pydantic
+https://platform.openai.com/traces | Traces - OpenAI API
+https://groq.com/ | Groq is Fast AI Inference
+https://console.groq.com/docs/api-reference#files | API Reference - GroqDocs
+https://console.groq.com/dashboard/metrics | GroqCloud
+https://openai.github.io/openai-agents-python/tools/ | Tools - OpenAI Agents SDK
+https://gemini.google.com/app/7dfee8041838f6a7 | Gemini
+https://paperswithcode.com/ | The latest in Machine Learning | Papers With Code
+https://arxiv.org/list/cs.AI/new | Artificial Intelligence
+https://arxiv.org/pdf/2505.03033 | AI-Powered_Audiovisual_Personalization
+https://arxiv.org/abs/2505.03135 | [2505.03135] Holmes: Automated Fact Check with Large Language Models
+https://arxiv.org/html/2505.03678v1 | Graph Drawing for LLMs: An Empirical Evaluation
+https://cloud.google.com/vertex-ai?hl=en | Vertex AI Platform | Google Cloud
+https://aistudio.google.com/apikey | Get API key | Google AI Studio
+https://console.groq.com/docs/rate-limits | Rate Limits - GroqDocs
+https://www.newsminimalist.com/?sentiment=positive&from=4&to=10 | News Minimalist — All news ranked by significance
+https://platform.openai.com/docs/guides/your-data | Data controls in the OpenAI platform - OpenAI API
+https://github.com/embeddings-benchmark/mteb/tree/main | embeddings-benchmark/mteb: MTEB: Massive Text Embedding Benchmark
+https://arxiv.org/abs/2502.13595 | [2502.13595] MMTEB: Massive Multilingual Text Embedding Benchmark
+https://docs.google.com/presentation/d/1Adj-YGegUHcEp3yOHQKIZELprUhqXFdmM4fj5OI867k/edit?usp=sharing
+https://docs.google.com/presentation/d/1Adj-YGegUHcEp3yOHQKIZELprUhqXFdmM4fj5OI867k/edit?usp=sharing
+https://docs.google.com/presentation/d/1Adj-YGegUHcEp3yOHQKIZELprUhqXFdmM4fj5OI867k/edit?slide=id.g3508d7141bc_0_481#slide=id.g3508d7141bc_0_481
+https://docs.google.com/presentation/d/1Adj-YGegUHcEp3yOHQKIZELprUhqXFdmM4fj5OI867k/edit?slide=id.g22288977a64_1_184#slide=id.g22288977a64_1_184
+https://docs.google.com/document/d/1Ac0CVwz_GgFwX-DncZ2i1BZ2UZFDvvucuab_3ycOzzg/edit?tab=t.0
+https://arxiv.org/pdf/2201.11903
+https://github.com/slowmist/MCP-Security-Checklist
+https://modelcontextprotocol.io/examples
+https://github.com/sooperset/mcp-atlassian
+https://github.com/slowmist/MCP-Security-Checklist
+https://wisprflow.ai/
+https://superwhisper.com/
+https://www.youtube.com/watch?v=_2C2CNmK7dQ
+https://github.com/elder-plinius/CL4R1T4S/blob/main/CURSOR/Cursor_Prompt.md
+https://github.com/elder-plinius/CL4R1T4S
+https://start.me/p/RMPGL5/multiverse-ai-toolkit
+https://www.youtube.com/watch?v=hShY6xZWVGE
+https://arxiv.org/pdf/2502.16923
+https://docs.google.com/presentation/d/1Adj-YGegUHcEp3yOHQKIZELprUhqXFdmM4fj5OI867k/edit?slide=id.g3508d7141bc_0_532#slide=id.g3508d7141bc_0_532
+https://docs.anthropic.com/en/prompt-library/library
+https://cookbook.openai.com/
+https://semantle.pimanrul.es/
+https://gus.lightning.force.com/lightning/r/ADM_Work__c/a07EE00002DMAaYYAX/view” and it did it 😮 It was a simple JSON update, but still
+https://github.com/smn2gnt/MCP-Salesforce
+https://docs.google.com/presentation/d/1Adj-YGegUHcEp3yOHQKIZELprUhqXFdmM4fj5OI867k/edit?slide=id.g3508d7141bc_0_532#slide=id.g3508d7141bc_0_532
+https://gist.github.com/lizTheDeveloper/9cc4d16f9afc0aad014fce584537f9ec
+https://docs.google.com/presentation/d/1Adj-YGegUHcEp3yOHQKIZELprUhqXFdmM4fj5OI867k/edit?slide=id.g3508d7141bc_0_532#slide=id.g3508d7141bc_0_532
+https://gist.github.com/lizTheDeveloper/169ab6a315de091766498578df498640#file-final_sec_expert-md
+https://gist.github.com/lizTheDeveloper/169ab6a315de091766498578df498640#file-final_sec_expert-md
+https://arxiv.org/pdf/2302.11382
+https://arxiv.org/pdf/2302.11382
+https://g.co/gemini/share/5e4e7af40b07
+https://github.com/Simon-Kansara/ableton-live-mcp-server 
+https://github.com/ahujasid/blender-mcp 
+https://gist.github.com/lizTheDeveloper/657730cdfcf04b0a1bd2dfa0f72bf9ef
+https://www.youtube.com/watch?v=v7UcVPO4y3c
+https://docs.google.com/presentation/d/1MgLeEkSyjYUss5JxOzdX1DANJMQj5lbI2MnK_wW-jY4/edit?usp=sharing
+https://github.com/loopwork-ai/emcee
+https://docs.google.com/presentation/d/1MgLeEkSyjYUss5JxOzdX1DANJMQj5lbI2MnK_wW-jY4/edit?slide=id.g3553a914750_0_1#slide=id.g3553a914750_0_1
+https://claude.ai/share/f8476d5c-32b5-47e2-928b-b307a71c7e0a
+https://gist.github.com/lizTheDeveloper/13e95033b79b6b4afa6aa5f9fa13816d
+https://gist.github.com/lizTheDeveloper/13e95033b79b6b4afa6aa5f9fa13816d
+https://claude.ai/share/5215f35b-ff2e-421a-8940-76c686eb2c24
+https://github.com/deepseek-ai/DeepSeek-R1/blob/main/DeepSeek_R1.pdf
+https://openai.github.io/openai-agents-python/quickstart/
+https://openai.github.io/openai-agents-python/quickstart/#put-it-all-together
+https://docs.google.com/presentation/d/1Adj-YGegUHcEp3yOHQKIZELprUhqXFdmM4fj5OI867k/edit?usp=sharing
+https://gist.github.com/lizTheDeveloper/758e52bd6539156e30e8225ce812e13b
+https://a37357afb7cc9a84e4.gradio.live/
+https://console.cloud.google.com/auth/audience
+https://console.cloud.google.com/apis/library?
+https://openai.github.io/openai-agents-python/models/litellm/
+https://openai.github.io/openai-agents-python/models/litellm/
+https://docs.anthropic.com/en/docs/build-with-claude/prompt-engineering/prompt-improver
+https://docs.anthropic.com/en/docs/build-with-claude/prompt-engineering/prompt-templates-and-variables
+https://arxiv.org/pdf/1606.06565
+https://arxiv.org/pdf/2401.05566
+https://arxiv.org/abs/2106.08970
+https://arxiv.org/abs/2404.09932
+https://github.com/PatrickJS/awesome-cursorrules
+https://arxiv.org/abs/2503.16419
+https://docs.google.com/presentation/d/1MgLeEkSyjYUss5JxOzdX1DANJMQj5lbI2MnK_wW-jY4/edit?slide=id.g3508d7141bc_0_486#slide=id.g3508d7141bc_0_486
+https://openai.github.io/openai-agents-python/handoffs/
+https://docs.litellm.ai/docs/providers/perplexity
+https://openai.github.io/openai-agents-python/models/litellm/
+https://docs.litellm.ai/docs/providers/groq
+https://openai.github.io/openai-agents-python/tools/
+https://platform.openai.com/traces
+https://platform.openai.com/docs/guides/pdf-files?api-mode=responses
+https://platform.openai.com/docs/guides/structured-outputs?api-mode=responses&example=structured-data
+https://arxiv.org/list/cs.AI/recent
+https://ai.google.dev/gemini-api/docs/structured-output?lang=python
+https://ai.google.dev/gemini-api/docs/document-processing?lang=python
+https://aistudio.google.com/apikey
+https://arxiv.org/list/cs.AI/recent
+https://gist.github.com/lizTheDeveloper/a5f003ce95752cf9cc17c2554c10a339
+https://docs.google.com/presentation/d/1Kam-eezb1KAmginI9pAl0H4Ld5MilM5XaYDYmHlHU3c/edit?slide=id.g22288977a64_1_46#slide=id.g22288977a64_1_46
+https://poloclub.github.io/transformer-explainer/
+https://bbycroft.net/llm
+https://colab.research.google.com/drive/1hXIQ77A4TYS4y3UthWF-Ci7V7vVUoxmQ?usp=sharing
+https://docs.google.com/presentation/d/1Kam-eezb1KAmginI9pAl0H4Ld5MilM5XaYDYmHlHU3c/edit?slide=id.g34bf24007ec_0_100#slide=id.g34bf24007ec_0_100
+https://docs.google.com/presentation/d/1e9VTozxUrS7ZEACFAFynad8oP5KjmAIMPBJ1KQuWvYQ/edit?slide=id.g34204ad825b_0_31#slide=id.g34204ad825b_0_31
+https://gist.github.com/lizTheDeveloper/3c4f509b7560e36dd69d7c308933afeb
+https://gist.github.com/lizTheDeveloper/529822ee60c0afbbd872b042b68352db
+https://colab.research.google.com/drive/1pk5lnQ8vaFCjEVdZ2bLp8Qpfn3sC6Nbk#scrollTo=YZKQqeoty0TE
+https://cookbook.openai.com/
+https://github.com/anthropics/anthropic-cookbook
+https://cookbook.openai.com/
+https://github.com/lizTheDeveloper/prompt_eng_salesforce_gradio_agent
